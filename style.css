@@ -1,0 +1,284 @@
+body,html {
+    background-color: #f3f8f7;
+    color: navy;
+    font-family: 'Archivo', sans-serif;
+}
+
+#header-body {
+    padding-left: 7vw;
+    padding-right: 7vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#topbar {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid navy;
+}
+
+#up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 2vw;
+    padding-bottom: 3vw;
+}
+
+#down {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10vw;
+}
+
+#down img {
+    width: 15vmax;
+    height: 15vmax;
+}
+
+#midimg {
+    display: flex;
+    flex-direction: column;
+}
+
+#midimg input {
+    width: 30vw;
+    border: none;
+    height: 50px;
+    border-radius: 12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding-left: 2vw;
+    margin-left: 10px;
+}
+
+#midimg h1 {
+    font-weight: 700;
+    font-size: 6vmax;
+}
+
+.midtext {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    border-bottom: 2px solid navy;
+}
+
+#img2 {
+    padding-top: 12vw;
+    align-items: end;
+}
+
+#steps {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid navy;
+}
+
+#steps img {
+    width: 20vmax;
+    height: 25vmax;
+}
+
+.step1 {
+    border-right: 2px solid navy;
+}
+
+.step2 {
+    border-right: 2px solid navy;
+}
+
+#work {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgwork {
+    display: flex;
+    justify-content: space-between;
+    gap: 15vw;
+    border-bottom: 2px solid navy;
+    box-sizing: border-box;
+}
+
+.workimg {
+    padding-left: 5vmin;
+    padding-bottom: 5vmin;
+    width: 60%;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    margin-top: 10vw;
+    padding-bottom: 6vw;
+    padding-top: 1vw;
+    background-color: #94be908f;
+}
+
+#bottomleft {
+    width: 50%;
+}
+
+#bottomright {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.workimg img {
+    width: 40vmax;
+    border-bottom: 3px solid navy;
+}
+
+.worktxt button {
+    width: 25vmin;
+    height: 8vmin;
+    border: 0.9px solid navy;
+    border-radius: 12px;
+    font-weight: 600;
+    margin-top: 2vmax;
+}
+
+#imgbtm img {
+    border: none;
+}
+
+#topsign {
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+#topsign button {
+    margin-left: 9px;
+    width: 22vmin;
+    height: 8vmin;
+    border-radius: 1.3vmin;
+    border: 1px solid navy;
+}
+
+button {
+    font-weight: 600;
+}
+
+#b1 {
+    background-color: #f3f8f7;
+    color: navy;
+}
+
+#b2 {
+    background-color: navy;
+    color: #f3f8f7;
+}
+
+#midimg button {
+    margin-left: 9px;
+    width: 22vmin;
+    height: 8vmin;
+    border-radius: 1.3vmin;
+    border: 2px solid navy;
+    background-color: navy;
+    color: #f3f8f7;
+    align-self: center;
+}
+
+.arrow {
+    border: solid navy;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+#arrowid {
+    align-self: center;
+}
+
+.step1 {
+    padding: 4vw;
+}
+
+.step2 {
+    padding: 4vw;
+}
+
+.step3 {
+    padding: 4vw;
+}
+
+button {
+    margin-bottom: 2vw;
+}
+
+#imgbtm button {
+    width: 22vmin;
+    height: 8vmin;
+    border: 1px solid navy;
+    border-radius: 12px;
+    margin-top: 5vmin;
+}
+
+.desc h6 {
+    font-weight: 200;
+    font-size: 12px;
+}
+
+
+@media only screen and (max-width: 830px) {
+    #midimg div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    .imgwork {
+        display: flex;
+        justify-content: stretch;
+        flex-direction: column-reverse;
+        gap: 1vw;
+
+    }
+
+    .workimg {
+        padding: 1vmin;
+        margin-bottom: 3vmin;
+    }
+
+    #imgbtm {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    #steps {
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+
+    .step1 {
+        border: none;
+        border-bottom: 2px solid navy;
+        display: inline-flex;
+        gap: 10px;
+    }
+
+    .step2 {
+        border: none;
+        border-bottom: 2px solid navy;
+        display: inline-flex;
+        gap: 10px;
+    }
+
+    .step3 {
+        display: inline-flex;
+        gap: 10px;
+    }
+}
